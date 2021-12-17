@@ -1,0 +1,108 @@
+@import "variables";
+
+#teamprofile {
+  min-height: 100vh;
+  background-color: $bg-dark-color;
+  font-family: $primary-font;
+
+  .container {
+    max-width: 1250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 0px 40px;
+    position: relative;
+
+    .content {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .left {
+        width: 50%;
+        padding-right: 50px;
+        position: relative;
+
+        .name {
+          font-size: 18px;
+          line-height: 28px;
+          color: $primary-color;
+          font-weight: 500;
+        }
+
+        .subject {
+          color: $white-color;
+          font-size: 45px;
+          font-weight: 800;
+          line-height: 1.4;
+          text-transform: uppercase;
+          margin-bottom: 25px;
+          margin-top: 16px;
+        }
+
+        .members {
+          width: 100%;
+          height: auto;
+          clear: both;
+          float: left;
+          margin-bottom: 35px;
+
+          ul {
+            li {
+              i {
+                position: relative;
+                top: 2px;
+                width: 12px;
+                height: 12px;
+                left: 10px;
+                transition: all 0.1s ease;
+              }
+              a {
+                font-size: 17px;
+                display: inline-block;
+                padding: 8px 0px;
+                position: relative;
+                transition: all 0.3s ease;
+              }
+              a:hover {
+                color: $primary-color;
+                i {
+                  transform: rotate(-30deg);
+                }
+              }
+            }
+          }
+        }
+
+        .short_info {
+          width: 100%;
+          height: auto;
+          clear: both;
+          float: left;
+          h3 {
+            color: $gray-color;
+            font-size: 35px;
+            font-weight: 200;
+          }
+        }
+      }
+
+      .right {
+        width: 50%;
+        text-align: center;
+        position: relative;
+        .image {
+          img {
+            max-width: 300px;
+            background-color: $primary-color;
+            border-radius: 10px;
+            box-shadow: 0 0 40px $white-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "variables";
+
+section:not(:first-child) {
+  background-color: $bg-light-color;
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  .section-body {
+    padding: 140px 0px 140px 0px;
+    .section-container {
+      max-width: 1250px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      padding: 0px 40px;
+      position: relative;
+      clear: both;
+      .section-title {
+        span {
+          display: inline-block;
+          color: $primary-color;
+          font-family: $primary-font;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        h3 {
+          color: $white-color;
+          font-weight: 800;
+          text-transform: uppercase;
+          font-size: 30px;
+          line-height: 1.2;
+          font-family: $primary-font;
+        }
+      }
+      .section-content {
+        width: 100%;
+        float: left;
+        margin-top: 40px;
+        margin-bottom: 140px;
+        p {
+          color: $gray-color;
+          margin: 40px 0px;
+        }
+      }
+    }
+  }
+}
+
+section:nth-child(odd) {
+  background-color: $bg-light-color;
+}
+
+section:nth-child(even) {
+  background-color: $bg-dark-color;
+}
+#it_work {
+  background-color: black;
+}

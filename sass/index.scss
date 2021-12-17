@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--- Import file scss ---*/
+@import "section", "variables", "header", "teamprofile", "tools", "cursor",
+  "modalbox";
+
+/*--- Container ---*/
+a {
+  color: $white-color;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

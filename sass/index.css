@@ -352,11 +352,6 @@ header .icons i {
   border: 1px solid #ff9800;
 }
 
-@media (max-width: 1060px) {
-  .cursor {
-    display: none;
-  }
-}
 .bg-modal {
   position: fixed;
   top: 0;

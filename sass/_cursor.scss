@@ -59,3 +59,9 @@
   animation: cursorAnim3 0.5s forwards;
   border: 1px solid $primary-color;
 }
+
+@media (max-width: 1060px) {
+  .cursor {
+    display: none;
+  }
+}

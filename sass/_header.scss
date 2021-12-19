@@ -25,7 +25,7 @@ header {
     text-decoration: none;
     list-style: none;
   }
-  ul {
+  .mainMenu {
     position: relative;
     display: flex;
     justify-content: center;
@@ -46,6 +46,51 @@ header {
         color: $primary-color;
         transition: all 0.3s ease;
       }
+    }
+  }
+  .open-menu {
+    color: $white-color;
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  .close-menu,
+  .icons i {
+    color: $white-color;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1060px) {
+  header {
+    .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1000000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $bg-light-color;
+      transition: top 1s ease;
+      display: none;
+      li {
+        margin-top: 30px;
+      }
+    }
+    .close-menu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .open-menu {
+      display: block;
     }
   }
 }

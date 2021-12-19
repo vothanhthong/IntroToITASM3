@@ -64,6 +64,7 @@
         margin-bottom: 37px;
         border-radius: 8px;
       }
+
       .title {
         width: 100%;
         float: left;
@@ -80,8 +81,42 @@
   }
 }
 
+.image-css {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bg-modal:target {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .bg-modal {
+    .modal-box {
+      .inner-content {
+        width: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .bg-modal {
+    .modal-box {
+      .inner-content {
+        width: 500px;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .bg-modal {
+    .modal-box {
+      .inner-content {
+        width: 700px;
+      }
+    }
+  }
 }

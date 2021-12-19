@@ -14,9 +14,11 @@ section:not(:first-child) {
   clear: both;
   float: left;
 }
+
 section:not(:first-child) .section-body {
   padding: 140px 0px 140px 0px;
 }
+
 section:not(:first-child) .section-body .section-container {
   max-width: 1250px;
   width: 100%;
@@ -27,6 +29,7 @@ section:not(:first-child) .section-body .section-container {
   position: relative;
   clear: both;
 }
+
 section:not(:first-child) .section-body .section-container .section-title span {
   display: inline-block;
   color: #ff9800;
@@ -34,6 +37,7 @@ section:not(:first-child) .section-body .section-container .section-title span {
   margin-bottom: 10px;
   font-weight: bold;
 }
+
 section:not(:first-child) .section-body .section-container .section-title h3 {
   color: #fff;
   font-weight: 800;
@@ -42,12 +46,14 @@ section:not(:first-child) .section-body .section-container .section-title h3 {
   line-height: 1.2;
   font-family: "Open Sans", sans-serif;
 }
+
 section:not(:first-child) .section-body .section-container .section-content {
   width: 100%;
   float: left;
   margin-top: 40px;
   margin-bottom: 140px;
 }
+
 section:not(:first-child) .section-body .section-container .section-content p {
   color: #a7afbd;
   margin: 40px 0px;
@@ -86,6 +92,7 @@ header {
   padding: 30px 50px;
   z-index: 10;
 }
+
 header a {
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -94,17 +101,20 @@ header a {
   text-decoration: none;
   list-style: none;
 }
-header .mainMenu {
+
+header ul {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .mainMenu li {
+
+header ul li {
   position: relative;
   list-style: none;
 }
-header .mainMenu li a {
+
+header ul li a {
   position: relative;
   margin: 0 15px;
   font-size: 16px;
@@ -113,53 +123,12 @@ header .mainMenu li a {
   letter-spacing: 0.2px;
   font-weight: 400;
 }
-header .mainMenu li a:hover {
+
+header ul li a:hover {
   color: #ff9800;
   transition: all 0.3s ease;
 }
-header .open-menu {
-  color: #fff;
-  font-size: 2rem;
-  margin: 20px;
-  display: none;
-  cursor: pointer;
-}
-header .close-menu,
-header .icons i {
-  color: #fff;
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
-}
 
-@media (max-width: 1060px) {
-  header .mainMenu {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000000;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #4a4b50;
-    transition: top 1s ease;
-    display: none;
-  }
-  header .mainMenu li {
-    margin-top: 30px;
-  }
-  header .close-menu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  header .open-menu {
-    display: block;
-  }
-}
 /*--- Font ---*/
 /*--- Color ---*/
 #teamprofile {
@@ -167,6 +136,7 @@ header .icons i {
   background-color: #303134;
   font-family: "Open Sans", sans-serif;
 }
+
 #teamprofile .container {
   max-width: 1250px;
   width: 100%;
@@ -176,6 +146,7 @@ header .icons i {
   padding: 0px 40px;
   position: relative;
 }
+
 #teamprofile .container .content {
   width: 100%;
   min-height: 100vh;
@@ -183,17 +154,20 @@ header .icons i {
   align-items: center;
   position: relative;
 }
+
 #teamprofile .container .content .left {
   width: 50%;
   padding-right: 50px;
   position: relative;
 }
+
 #teamprofile .container .content .left .name {
   font-size: 18px;
   line-height: 28px;
   color: #ff9800;
   font-weight: 500;
 }
+
 #teamprofile .container .content .left .subject {
   color: #fff;
   font-size: 45px;
@@ -203,6 +177,7 @@ header .icons i {
   margin-bottom: 25px;
   margin-top: 16px;
 }
+
 #teamprofile .container .content .left .members {
   width: 100%;
   height: auto;
@@ -210,6 +185,7 @@ header .icons i {
   float: left;
   margin-bottom: 35px;
 }
+
 #teamprofile .container .content .left .members ul li i {
   position: relative;
   top: 2px;
@@ -218,6 +194,7 @@ header .icons i {
   left: 10px;
   transition: all 0.1s ease;
 }
+
 #teamprofile .container .content .left .members ul li a {
   font-size: 17px;
   display: inline-block;
@@ -225,28 +202,34 @@ header .icons i {
   position: relative;
   transition: all 0.3s ease;
 }
+
 #teamprofile .container .content .left .members ul li a:hover {
   color: #ff9800;
 }
+
 #teamprofile .container .content .left .members ul li a:hover i {
   transform: rotate(-30deg);
 }
+
 #teamprofile .container .content .left .short_info {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
+
 #teamprofile .container .content .left .short_info h3 {
   color: #a7afbd;
   font-size: 35px;
   font-weight: 200;
 }
+
 #teamprofile .container .content .right {
   width: 50%;
   text-align: center;
   position: relative;
 }
+
 #teamprofile .container .content .right .image img {
   max-width: 300px;
   background-color: #ff9800;
@@ -320,11 +303,6 @@ header .icons i {
   border: 1px solid #ff9800;
 }
 
-@media (max-width: 1060px) {
-  .cursor {
-    display: none;
-  }
-}
 .bg-modal {
   position: fixed;
   top: 0;
@@ -337,6 +315,7 @@ header .icons i {
   visibility: hidden;
   opacity: 0;
 }
+
 .bg-modal .modal-box {
   border-radius: 8px;
   background-color: #4a4b50;
@@ -352,6 +331,7 @@ header .icons i {
   margin-top: 0px;
   transition: all 0.3s ease;
 }
+
 .bg-modal .modal-box .inner-content {
   position: relative;
   width: 100%;
@@ -370,6 +350,7 @@ header .icons i {
   word-wrap: break-word;
   font-weight: 400;
 }
+
 .bg-modal .modal-box .inner-content .modal-close {
   color: #fff;
   line-height: 50px;
@@ -383,30 +364,29 @@ header .icons i {
   width: 100px;
   text-decoration: none;
 }
+
 .bg-modal .modal-box .inner-content .modal-close:hover {
   color: #ff9800;
 }
+
 .bg-modal .modal-box .inner-content img {
   position: relative;
   margin-bottom: 37px;
   border-radius: 8px;
 }
+
 .bg-modal .modal-box .inner-content .title {
   width: 100%;
   float: left;
   margin-bottom: 22px;
 }
+
 .bg-modal .modal-box .inner-content .description {
   color: #a7afbd;
 }
+
 .bg-modal .modal-box .inner-content .description p {
   margin-bottom: 15px;
-}
-
-.image-css {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .bg-modal:target {
@@ -415,21 +395,6 @@ header .icons i {
   pointer-events: auto;
 }
 
-@media (max-width: 768px) {
-  .bg-modal .modal-box .inner-content {
-    width: 300px;
-  }
-}
-@media (max-width: 1040px) {
-  .bg-modal .modal-box .inner-content {
-    width: 500px;
-  }
-}
-@media (max-width: 1400px) {
-  .bg-modal .modal-box .inner-content {
-    width: 700px;
-  }
-}
 /*--- Container ---*/
 a {
   color: #fff;
@@ -445,3 +410,5 @@ html {
 }
 
 /*# sourceMappingURL=index.css.map */
+
+/*# sourceMappingURL=style.css.map */

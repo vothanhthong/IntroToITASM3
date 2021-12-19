@@ -49,16 +49,22 @@ section:not(:first-child) .section-body .section-container .section-content {
   margin-bottom: 140px;
 }
 section:not(:first-child) .section-body .section-container .section-content p {
+  line-height: 2;
   color: #a7afbd;
   margin: 40px 0px;
 }
+section:not(:first-child) .section-body .section-container .section-content h4 {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
 
 section:nth-child(odd) {
-  background-color: #4a4b50;
+  background-color: #303134;
 }
 
 section:nth-child(even) {
-  background-color: #303134;
+  background-color: #4a4b50;
 }
 
 #it_work {
@@ -248,17 +254,43 @@ header .icons i {
   position: relative;
 }
 #teamprofile .container .content .right .image img {
-  max-width: 300px;
+  max-width: 80%;
   background-color: #ff9800;
   border-radius: 10px;
   box-shadow: 0 0 40px #fff;
 }
 
+@media (max-width: 1060px) {
+  .container .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .content .left {
+    margin-top: 10vh;
+    width: 100%;
+  }
+  .container .content .right {
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
 /*--- Font ---*/
 /*--- Color ---*/
-.tools {
-  min-height: 200vh;
+#tools {
   background-color: #4a4b50;
+}
+#tools .section-content ul li {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+#tools .section-content ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin: 2vh 2vh;
+}
+#tools .section-content ul li:hover a {
+  color: #ff9800;
 }
 
 .cursor {
@@ -375,16 +407,13 @@ header .icons i {
   line-height: 50px;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 200;
   position: absolute;
   right: 0;
   text-align: center;
   top: 0;
   width: 100px;
   text-decoration: none;
-}
-.bg-modal .modal-box .inner-content .modal-close:hover {
-  color: #ff9800;
 }
 .bg-modal .modal-box .inner-content img {
   position: relative;

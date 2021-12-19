@@ -40,8 +40,14 @@ section:not(:first-child) {
         margin-top: 40px;
         margin-bottom: 140px;
         p {
+          line-height: 2;
           color: $gray-color;
           margin: 40px 0px;
+        }
+        h4 {
+          color: $white-color;
+          font-size: 18px;
+          font-family: $primary-font;
         }
       }
     }
@@ -49,11 +55,11 @@ section:not(:first-child) {
 }
 
 section:nth-child(odd) {
-  background-color: $bg-light-color;
+  background-color: $bg-dark-color;
 }
 
 section:nth-child(even) {
-  background-color: $bg-dark-color;
+  background-color: $bg-light-color;
 }
 #it_work {
   background-color: black;

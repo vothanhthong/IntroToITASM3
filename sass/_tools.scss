@@ -1,6 +1,23 @@
 @import "variables";
 
-.tools {
-  min-height: 200vh;
+#tools {
   background-color: $bg-light-color;
+  .section-content {
+    ul {
+      li {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        a {
+          font-family: $primary-font;
+          font-weight: bold;
+          margin: 2vh 2vh;
+        }
+      }
+      li:hover {
+        a {
+          color: $primary-color;
+        }
+      }
+    }
+  }
 }

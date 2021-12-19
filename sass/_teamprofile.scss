@@ -96,12 +96,30 @@
         position: relative;
         .image {
           img {
-            max-width: 300px;
+            max-width: 80%;
             background-color: $primary-color;
             border-radius: 10px;
             box-shadow: 0 0 40px $white-color;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .container {
+    .content {
+      display: flex;
+      flex-direction: column;
+      .left {
+        margin-top: 10vh;
+        width: 100%;
+      }
+      .right {
+        width: 100%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
       }
     }
   }

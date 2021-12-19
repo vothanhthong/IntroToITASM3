@@ -454,6 +454,14 @@ header .icons i {
     width: 700px;
   }
 }
+/*--- Font ---*/
+/*--- Color ---*/
+#feedback .section-container .section-content span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #ff9800;
+}
+
 /*--- Container ---*/
 a {
   color: #fff;

@@ -1,0 +1,13 @@
+@import "variables";
+
+#feedback {
+  .section-container {
+    .section-content {
+      span {
+        font-family: $primary-font;
+        font-weight: bold;
+        color: $primary-color;
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*--- Import file scss ---*/
@@ -14,9 +15,11 @@ section:not(:first-child) {
   clear: both;
   float: left;
 }
+
 section:not(:first-child) .section-body {
   padding: 140px 0px 140px 0px;
 }
+
 section:not(:first-child) .section-body .section-container {
   max-width: 1250px;
   width: 100%;
@@ -27,6 +30,7 @@ section:not(:first-child) .section-body .section-container {
   position: relative;
   clear: both;
 }
+
 section:not(:first-child) .section-body .section-container .section-title span {
   display: inline-block;
   color: #ff9800;
@@ -34,6 +38,7 @@ section:not(:first-child) .section-body .section-container .section-title span {
   margin-bottom: 10px;
   font-weight: bold;
 }
+
 section:not(:first-child) .section-body .section-container .section-title h3 {
   color: #fff;
   font-weight: 800;
@@ -42,17 +47,20 @@ section:not(:first-child) .section-body .section-container .section-title h3 {
   line-height: 1.2;
   font-family: "Open Sans", sans-serif;
 }
+
 section:not(:first-child) .section-body .section-container .section-content {
   width: 100%;
   float: left;
   margin-top: 40px;
   margin-bottom: 140px;
 }
+
 section:not(:first-child) .section-body .section-container .section-content p {
   line-height: 2;
   color: #a7afbd;
   margin: 40px 0px;
 }
+
 section:not(:first-child) .section-body .section-container .section-content h4 {
   color: #fff;
   font-size: 18px;
@@ -85,13 +93,21 @@ header {
   left: 0;
   width: 100%;
   background-color: #303134;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding: 30px 50px;
   z-index: 10;
 }
+
 header a {
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -100,16 +116,25 @@ header a {
   text-decoration: none;
   list-style: none;
 }
+
 header .mainMenu {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header .mainMenu li {
   position: relative;
   list-style: none;
 }
+
 header .mainMenu li a {
   position: relative;
   margin: 0 15px;
@@ -119,10 +144,13 @@ header .mainMenu li a {
   letter-spacing: 0.2px;
   font-weight: 400;
 }
+
 header .mainMenu li a:hover {
   color: #ff9800;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 header .open-menu {
   color: #fff;
   font-size: 2rem;
@@ -130,6 +158,7 @@ header .open-menu {
   display: none;
   cursor: pointer;
 }
+
 header .close-menu,
 header .icons i {
   color: #fff;
@@ -146,10 +175,18 @@ header .icons i {
     right: 0;
     left: 0;
     z-index: 1000000;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #4a4b50;
+    -webkit-transition: top 1s ease;
     transition: top 1s ease;
     display: none;
   }
@@ -166,6 +203,7 @@ header .icons i {
     display: block;
   }
 }
+
 /*--- Font ---*/
 /*--- Color ---*/
 #teamprofile {
@@ -173,6 +211,7 @@ header .icons i {
   background-color: #303134;
   font-family: "Open Sans", sans-serif;
 }
+
 #teamprofile .container {
   max-width: 1250px;
   width: 100%;
@@ -182,24 +221,32 @@ header .icons i {
   padding: 0px 40px;
   position: relative;
 }
+
 #teamprofile .container .content {
   width: 100%;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
+
 #teamprofile .container .content .left {
   width: 50%;
   padding-right: 50px;
   position: relative;
 }
+
 #teamprofile .container .content .left .name {
   font-size: 18px;
   line-height: 28px;
   color: #ff9800;
   font-weight: 500;
 }
+
 #teamprofile .container .content .left .subject {
   color: #fff;
   font-size: 45px;
@@ -209,6 +256,7 @@ header .icons i {
   margin-bottom: 25px;
   margin-top: 16px;
 }
+
 #teamprofile .container .content .left .members {
   width: 100%;
   height: auto;
@@ -216,54 +264,71 @@ header .icons i {
   float: left;
   margin-bottom: 35px;
 }
+
 #teamprofile .container .content .left .members ul li i {
   position: relative;
   top: 2px;
   width: 12px;
   height: 12px;
   left: 10px;
+  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
+
 #teamprofile .container .content .left .members ul li a {
   font-size: 17px;
   display: inline-block;
   padding: 8px 0px;
   position: relative;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 #teamprofile .container .content .left .members ul li a:hover {
   color: #ff9800;
 }
+
 #teamprofile .container .content .left .members ul li a:hover i {
-  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
+
 #teamprofile .container .content .left .short_info {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
+
 #teamprofile .container .content .left .short_info h3 {
   color: #a7afbd;
   font-size: 35px;
   font-weight: 200;
 }
+
 #teamprofile .container .content .right {
   width: 50%;
   text-align: center;
   position: relative;
 }
+
 #teamprofile .container .content .right .image img {
   max-width: 80%;
   background-color: #ff9800;
   border-radius: 10px;
-  box-shadow: 0 0 40px #fff;
+  -webkit-box-shadow: 0 0 40px #fff;
+          box-shadow: 0 0 40px #fff;
 }
 
 @media (max-width: 1060px) {
   .container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .container .content .left {
     margin-top: 10vh;
@@ -275,20 +340,24 @@ header .icons i {
     margin-bottom: 10vh;
   }
 }
+
 /*--- Font ---*/
 /*--- Color ---*/
 #tools {
   background-color: #4a4b50;
 }
+
 #tools .section-content ul li {
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
+
 #tools .section-content ul li a {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin: 2vh 2vh;
 }
+
 #tools .section-content ul li:hover a {
   color: #ff9800;
 }
@@ -299,9 +368,12 @@ header .icons i {
   border: 1px solid #fff;
   border-radius: 50%;
   position: absolute;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-  animation: cursorAnim 0.5s infinite alternate;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-animation: cursorAnim 0.5s infinite alternate;
+          animation: cursorAnim 0.5s infinite alternate;
   pointer-events: none;
   z-index: 100000;
 }
@@ -316,39 +388,89 @@ header .icons i {
   opacity: 0.5;
   top: -8px;
   left: -8px;
-  animation: cursorAnim2 0.5s infinite alternate;
+  -webkit-animation: cursorAnim2 0.5s infinite alternate;
+          animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@-webkit-keyframes cursorAnim {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 
 @keyframes cursorAnim {
   from {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
-    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
+
+@-webkit-keyframes cursorAnim2 {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+
 @keyframes cursorAnim2 {
   from {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
-    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
   }
 }
-@keyframes cursorAnim3 {
+
+@-webkit-keyframes cursorAnim3 {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(3);
+    -webkit-transform: scale(3);
+            transform: scale(3);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 0;
   }
 }
+
+@keyframes cursorAnim3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+
 .expand {
-  animation: cursorAnim3 0.5s forwards;
+  -webkit-animation: cursorAnim3 0.5s forwards;
+          animation: cursorAnim3 0.5s forwards;
   border: 1px solid #ff9800;
 }
 
@@ -360,10 +482,12 @@ header .icons i {
   height: 100vh;
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   visibility: hidden;
   opacity: 0;
 }
+
 .bg-modal .modal-box {
   border-radius: 8px;
   background-color: #4a4b50;
@@ -372,13 +496,16 @@ header .icons i {
   bottom: 70px;
   width: 970px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 1;
   opacity: 1;
   visibility: visible;
   margin-top: 0px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .bg-modal .modal-box .inner-content {
   position: relative;
   width: 100%;
@@ -387,8 +514,13 @@ header .icons i {
   overflow: hidden;
   padding: 50px;
   overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #fff;
   font-family: "Mulish", sans-serif;
   font-size: 16px;
@@ -397,6 +529,7 @@ header .icons i {
   word-wrap: break-word;
   font-weight: 400;
 }
+
 .bg-modal .modal-box .inner-content .modal-close {
   color: #fff;
   line-height: 50px;
@@ -410,27 +543,37 @@ header .icons i {
   width: 100px;
   text-decoration: none;
 }
+
 .bg-modal .modal-box .inner-content img {
   position: relative;
   margin-bottom: 37px;
   border-radius: 8px;
 }
+
 .bg-modal .modal-box .inner-content .title {
   width: 100%;
   float: left;
   margin-bottom: 22px;
 }
+
 .bg-modal .modal-box .inner-content .description {
   color: #a7afbd;
 }
+
 .bg-modal .modal-box .inner-content .description p {
   margin-bottom: 15px;
 }
 
 .image-css {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bg-modal:target {
@@ -444,16 +587,19 @@ header .icons i {
     width: 300px;
   }
 }
+
 @media (max-width: 1040px) {
   .bg-modal .modal-box .inner-content {
     width: 500px;
   }
 }
+
 @media (max-width: 1400px) {
   .bg-modal .modal-box .inner-content {
     width: 700px;
   }
 }
+
 /*--- Font ---*/
 /*--- Color ---*/
 #feedback .section-container .section-content span {
@@ -476,4 +622,7 @@ html {
   scroll-behavior: smooth;
 }
 
+#black-section {
+  background-color: black;
+}
 /*# sourceMappingURL=index.css.map */
